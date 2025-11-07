@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "tech-trends-chatbot-backend"
+version = "0.1.0"
+description = ""
+authors = ["ruizguille <guillermo@codeawake.com>"]
+packages = [{include = "app"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+openai = "^1.82.1"
+fastapi = {extras = ["standard"], version = "^0.115.12"}
+python-dotenv = "^1.0.1"
+
+[tool.poetry.group.dev.dependencies]
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+local = "app.assistants.local_assistant:main"
+export = "app.export:main"
