@@ -43,3 +43,4 @@ Config:
 
 Permissions:
 - Allow microphone access in your browser when prompted.
+Updated by Shikhar
